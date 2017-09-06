@@ -7,8 +7,6 @@ global:
   regions:
     - us-east-1
     - us-east-2
-    - us-west-1
-    - us-west-2
 tests:
   # The following test will test in both all 4 region defined in the global region section using sample-cloudformation-input.json as inputs
   scenario-all-regions:
