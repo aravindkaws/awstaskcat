@@ -1,7 +1,7 @@
 global:
   owner: aravind@amazon.com
   project: sample-cloudformation-project <- Must match the root directory of project (usually the name of git repo)
-  qsname: CIS
+  qsname: awstaskcat
   reporting: true
   #s3bucket: projectx-templates <- (Optional) Only needed if you want to use a specific bucket 
   regions:
@@ -12,5 +12,5 @@ global:
 tests:
   # The following test will test in both all 4 region defined in the global region section using sample-cloudformation-input.json as inputs
   scenario-all-regions:
-    parameter_input: sample-cloudformation-input-withvpc.json
+    parameter_input: parameters.json
     template_file: CIS-AWSBenchmark.template
